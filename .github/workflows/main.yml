@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Generacion de Prompt con Gemini"
-        uses: Drastyn/gemini/actions/gemini-composite@main
+        uses: Drastyn/gemini/.actions/gemini-composite@main
         with: 
           prompt: ${{ inputs.input }}
           GH_TOKEN: ${{ secrets.PAT }}
