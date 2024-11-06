@@ -13,5 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Generacion de Prompt con Gemini"
-        run: echo "hello-world"
+        uses: Drastyn/gemini/actions/gemini-composite@main
+        with: 
+          prompt: ${{ inputs.input }}
+          GH_TOKEN: ${{ secrets.PAT }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          
         
