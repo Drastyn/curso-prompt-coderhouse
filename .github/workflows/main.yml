@@ -1,3 +1,5 @@
+name: "Proyecto"
+
 on:
   workflow_dispatch:
     inputs:
