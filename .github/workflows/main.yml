@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch:
+    inputs:
+      input: 
+        required: true
+        description: '¿Que quieres imaginar?'
+        type: string
+
+jobs:
+  generate-prompt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Generacion de Prompt con Gemini"
+        run: echo "hello-world"
+        
