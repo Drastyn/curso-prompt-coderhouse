@@ -18,5 +18,9 @@ jobs:
           prompt: ${{ inputs.input }}
           GH_TOKEN: ${{ secrets.PAT }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          
-        
+
+      - name: "Crearcion de imagen con DALL-E-3"
+        uses: Drastyn/create-image-gpt/.github/actions/create-image-gpt-composite@main
+        with:
+          GH_TOKEN: ${{ secrets.PAT }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
