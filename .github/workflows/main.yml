@@ -19,6 +19,9 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
+  generate-image:
+    runs-on: ubuntu-latest
+    steps:
       - name: "Crearcion de imagen con DALL-E-3"
         uses: Drastyn/create-image-gpt/.github/actions/create-image-gpt-composite@main
         with:
