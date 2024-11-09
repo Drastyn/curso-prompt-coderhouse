@@ -16,6 +16,7 @@ jobs:
         uses: Drastyn/gemini/.github/actions/gemini-composite@main
         with: 
           prompt: ${{ inputs.input }}
+          output-artifact: 'prompt-create'
           GH_TOKEN: ${{ secrets.PAT }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
@@ -28,3 +29,5 @@ jobs:
         with:
           GH_TOKEN: ${{ secrets.PAT }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          input-artifact: 'prompt-create'
+          prompt-file: 'output'
