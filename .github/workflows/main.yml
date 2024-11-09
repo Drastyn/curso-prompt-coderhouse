@@ -21,6 +21,7 @@ jobs:
 
   generate-image:
     runs-on: ubuntu-latest
+    needs: generate-prompt
     steps:
       - name: "Crearcion de imagen con DALL-E-3"
         uses: Drastyn/create-image-gpt/.github/actions/create-image-gpt-composite@main
