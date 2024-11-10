@@ -19,6 +19,7 @@ jobs:
           output-artifact: 'prompt-created'
           GH_TOKEN: ${{ secrets.PAT }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          ATTEMPTS: ${{ vars.ATTEMPTS }}
 
   generate-image:
     runs-on: ubuntu-latest
@@ -31,3 +32,4 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           input-artifact: 'prompt-created'
           prompt-file: 'output'
+          ATTEMPTS: ${{ vars.ATTEMPTS }}
