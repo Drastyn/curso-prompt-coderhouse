@@ -23,7 +23,7 @@ jobs:
           concept: ${{ inputs.concept }}
           style: ${{ inputs.style }}
           output-artifact: 'prompt-created'
-          output-file: 'prompt'
+          output-file-name: 'prompt'
           GH_TOKEN: ${{ secrets.PAT }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           ATTEMPTS: ${{ vars.ATTEMPTS }}
