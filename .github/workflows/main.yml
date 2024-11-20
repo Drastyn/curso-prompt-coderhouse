@@ -39,4 +39,6 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           input-artifact: 'prompt-created'
           prompt-file: 'prompt'
+          ouput-artifact: 'desing-created'
+          image-name: 'desing'
           ATTEMPTS: ${{ vars.ATTEMPTS }}
