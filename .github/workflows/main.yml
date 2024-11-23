@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Generacion de Prompt con Gemini"
-        uses: Drastyn/gemini/.github/actions/gemini-composite@main
+        uses: Drastyn/create-prompt-gemini/.github/actions/gemini-composite@main
         with: 
           concept: ${{ inputs.concept }}
           style: ${{ inputs.style }}
